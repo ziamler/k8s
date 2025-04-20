@@ -4,6 +4,6 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy site content
-COPY ./html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/
 
 EXPOSE 80
