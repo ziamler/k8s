@@ -6,7 +6,7 @@ pipeline {
         CLUSTER_NAME = "eks-test-cluster"
         ECR_REPO = "544281168843.dkr.ecr.ap-south-1.amazonaws.com/k8s-test-repo"
         IMAGE_TAG = "${env.BUILD_NUMBER}"
-        K8S_MANIFEST = "nginx-deployment.yaml"
+        K8S_MANIFEST = "k8s/nginx-deployment.yaml"
     }
 
     stages {
